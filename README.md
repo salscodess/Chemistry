@@ -35,5 +35,6 @@ dash.cloudflare.com <br>
 Web = dash.salsoftware.online (reverse proxy) <br>
 post = api.aslsofware.online/MainRoute <br>
 return = api.salsoftware.online/answ <br>
+https://pypi.org/project/llama-models/ <br>
 
 
