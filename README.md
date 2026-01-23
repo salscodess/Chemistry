@@ -5,21 +5,21 @@ Plans:
 
 Front end:
 
-create windows .exe that 
-1: opens via hotkey ( ALT + 0 )
-2: shows a clean slick gui with a text box
-3: when entering send post api to server
+create windows .exe that  <br>
+1: opens via hotkey ( ALT + 0 )  <br>
+2: shows a clean slick gui with a text box  <br>
+3: when entering send post api to server <br> 
 
 Backend:
 
 1: linux <br>
-2: setup fastapi and small web dash
-  |- Web dash can add and edit commands / scripts
-  |- pwsd protection with users
-mysql for data storage
-python back end
-local ai for prompt interpetation
-know dif between run local and run through cloud.
+2: setup fastapi and small web dash  <br>
+  |- Web dash can add and edit commands / scripts  <br>
+  |- pwsd protection with users  <br>
+mysql for data storage  <br>
+python back end  <br>
+local ai for prompt interpetation  <br>
+know dif between run local and run through cloud.  <br>
 
 __
 
