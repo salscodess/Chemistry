@@ -1,0 +1,129 @@
+╔════════════════════════════════════════════════════════════╗
+║       🧪 CHEMISTRY DASHBOARD - QUICK REFERENCE             ║
+╚════════════════════════════════════════════════════════════╝
+
+📍 ACCESS
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+  URL:      http://localhost:8001
+  Username: admin
+  Password: chem*****
+
+🔐 AUTHENTICATION
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+  Type: HTTP Basic Authentication
+  All endpoints require login except /health
+
+🎮 CONTROLS
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+  ▶ START    → Start API server on port 8000
+  ■ STOP     → Stop running API server
+  ↻ RESTART  → Restart API server
+  ⟳ REFRESH  → Update status manually
+
+📊 MONITORING
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+  • Process ID (PID)
+  • CPU Usage (%)
+  • Memory (MB)
+  • Uptime (hours/minutes)
+  • Auto-refresh every 5 seconds
+
+💻 TERMINAL COMMANDS
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+  Examples:
+    ls -la              → List files
+    pip list            → List Python packages
+    python --version    → Check Python version
+    cat main.py         → View file contents
+    git status          → Check git status
+  
+  Working Directory: /workspaces/Chemistry/backend/api
+  Timeout: 30 seconds
+
+🔧 QUICK START
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+  1. Open: http://localhost:8001
+  2. Login: admin / chemistry2026
+  3. Click: ▶ START
+  4. Monitor: Real-time logs appear
+  5. Test: http://localhost:8000/docs
+
+🛑 STOPPING SERVICES
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+  Dashboard:
+    pkill -f "uvicorn dashboard_api"
+  
+  API (from dashboard or manually):
+    pkill -f "uvicorn main:app"
+
+📁 IMPORTANT FILES
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+  Dashboard Backend:
+    backend/dash/dashboard_api.py
+  
+  Dashboard Frontend:
+    backend/dash/index.html
+  
+  Credentials Doc:
+    backend/dash/CREDENTIALS.md
+  
+  Nginx Config:
+    backend/dash/nginx.conf
+
+⚠️  SECURITY NOTES
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+  ⚠  Change default password before production!
+  ⚠  Use HTTPS in production
+  ⚠  Restrict command execution in production
+  ⚠  Add firewall rules (only expose 80/443)
+  ⚠  Use environment variables for credentials
+
+🌐 PRODUCTION DEPLOYMENT
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+  Domain: dash.salsoftware.online
+  
+  1. Configure nginx (see backend/dash/nginx.conf)
+  2. Install SSL: certbot --nginx -d dash.salsoftware.online
+  3. Create systemd service (see DEPLOYMENT.md)
+  4. Update DNS A record to server IP
+  5. Change default credentials!
+
+✅ FEATURES WORKING
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+  ✓ Password protection
+  ✓ Start/Stop/Restart API server
+  ✓ Real-time process monitoring
+  ✓ Live log streaming (WebSocket)
+  ✓ Command execution
+  ✓ Auto-refresh status
+  ✓ Graceful shutdown
+  ✓ Error handling
+
+📚 DOCUMENTATION
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+  Main README:        README.md
+  Dashboard README:   backend/dash/README.md
+  Deployment Guide:   DEPLOYMENT.md
+  Credentials:        backend/dash/CREDENTIALS.md
+  Recent Fixes:       FIXES_COMPLETE.md
+
+🆘 TROUBLESHOOTING
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+  Login not working?
+    → Check username: admin, password: chemistry2026
+  
+  Start button not working?
+    → Check if port 8000 is available
+    → View dashboard logs in terminal
+  
+  Commands not executing?
+    → Check working directory is correct
+    → Verify command syntax
+  
+  WebSocket disconnected?
+    → Refresh page
+    → Check browser console for errors
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+  Dashboard Status: ✅ FULLY OPERATIONAL
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
