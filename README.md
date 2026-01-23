@@ -12,7 +12,7 @@ create windows .exe that
 
 Backend:
 
-1: linux
+1: linux <br>
 2: setup fastapi and small web dash
   |- Web dash can add and edit commands / scripts
   |- pwsd protection with users
