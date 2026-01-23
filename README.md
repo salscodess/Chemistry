@@ -25,4 +25,15 @@ __
 
 Work flow:
 
-(hotkey0 -> Gui -> prompt -> post api -> understand task -> hybrid (local vs cloud) -> send task -> return valid
+(hotkey0 -> Gui -> prompt -> post api -> understand task -> hybrid (local vs cloud) -> send task -> return valid <br>
+
+Links:
+https://pypi.org/project/pyinstaller/ <br>
+dash.cloudflare.com <br>
+
+
+Web = dash.salsoftware.online (reverse proxy) <br>
+post = api.aslsofware.online/MainRoute <br>
+return = api.salsoftware.online/answ <br>
+
+
