@@ -156,7 +156,12 @@ Chemistry/
 │       ├── nginx.conf           # Nginx configuration
 │       ├── requirements.txt
 │       └── README.md
-├── frontend/                     # (Planned) Windows client
+├── frontend/                     # Desktop client (Windows + Linux)
+│   ├── chemistry_desktop/       # Desktop app package
+│   ├── scripts/                 # OS launch/install scripts
+│   ├── build/                   # PyInstaller build scripts
+│   ├── desktop_client.py        # Python entrypoint
+│   ├── requirements.txt
 │   └── setup.md
 ├── start.sh                     # Quick start script
 ├── DEPLOYMENT.md                # Production deployment guide
@@ -165,11 +170,13 @@ Chemistry/
 
 ## Planned Features
 
-### Frontend (Windows Client)
-- [ ] Windows .exe with hotkey activation (ALT+0)
-- [ ] Clean, slick GUI with text input
-- [ ] POST requests to API server
-- [ ] Response handling and display
+### Frontend (Desktop Client)
+- [x] Cross-platform desktop GUI client (Tkinter)
+- [x] ALT+0 shortcut to trigger routed requests
+- [x] POST requests to `/api/route` and route `/process` endpoints
+- [x] Response display with JSON formatting
+- [x] Windows launcher and PyInstaller build support
+- [x] Linux launcher script and desktop entry installer
 
 ### Backend Enhancements
 - [ ] User authentication with password protection
@@ -179,12 +186,12 @@ Chemistry/
 - [ ] Command/script management via dashboard
 - [ ] User management system
 
-## Workflow
+## Desktop Workflow
 
 ```
-User Input (ALT+0)
+User Input (ALT+0 or button)
     ↓
-Windows GUI
+Desktop GUI (Windows/Linux)
     ↓
 POST to api.salsoftware.online/api/route
     ↓
@@ -206,7 +213,7 @@ Return Response to GUI
 ## Technologies
 
 - **Backend**: FastAPI, Python 3.12
-- **Frontend**: HTML/CSS/JavaScript (Dashboard), Windows .exe (Client - planned)
+- **Frontend**: HTML/CSS/JavaScript (Dashboard), Python Tkinter desktop client (Windows + Linux)
 - **Server**: Uvicorn, WebSockets
 - **Reverse Proxy**: Nginx
 - **AI**: llama-models (planned)
