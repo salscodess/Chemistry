@@ -4,6 +4,7 @@ Type=Application
 Name=Chemistry Desktop
 Comment=Chemistry API desktop client
 Exec=chemistry-desktop
+Icon=chemistry-desktop
 Terminal=false
 Categories=Utility;Development;
 Keywords=chemistry;api;client;

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" role="img" aria-label="Chemistry Desktop">
+  <defs>
+    <linearGradient id="g" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#1e3a8a"/>
+      <stop offset="100%" stop-color="#2563eb"/>
+    </linearGradient>
+  </defs>
+  <rect x="12" y="12" width="232" height="232" rx="44" fill="url(#g)"/>
+  <path d="M98 62h60v12h-20v56.5l43 66.5c5.6 8.6-.6 19-10.8 19H85.8c-10.2 0-16.4-10.4-10.8-19l43-66.5V74H98V62z" fill="#f8fafc"/>
+  <circle cx="128" cy="158" r="10" fill="#93c5fd"/>
+  <circle cx="108" cy="186" r="8" fill="#dbeafe"/>
+  <circle cx="146" cy="188" r="7" fill="#bfdbfe"/>
+</svg>

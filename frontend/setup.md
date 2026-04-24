@@ -61,6 +61,23 @@ cd frontend
 Output binary:
 - `frontend/dist/chemistry-desktop`
 
+### Linux AppImage
+
+```bash
+cd frontend
+./build/build_appimage.sh
+```
+
+Output AppImage:
+- `frontend/dist/Chemistry-Desktop-x86_64.AppImage`
+
+Run it with:
+
+```bash
+chmod +x frontend/dist/Chemistry-Desktop-x86_64.AppImage
+./frontend/dist/Chemistry-Desktop-x86_64.AppImage
+```
+
 ### Windows
 
 On Windows PowerShell:
