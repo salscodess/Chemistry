@@ -23,6 +23,16 @@ pip install -r requirements.txt
 python desktop_client.py
 ```
 
+### Linux package prerequisite (Tkinter)
+
+Tkinter must be present in the system Python used to run/build the app.
+On Debian/Ubuntu:
+
+```bash
+sudo apt update
+sudo apt install -y python3-tk
+```
+
 Default API URL is `http://localhost:8000`.
 
 ## Linux Native Launcher

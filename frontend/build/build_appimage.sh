@@ -13,6 +13,16 @@ VENV_PYTHON=""
 
 mkdir -p "${BUILD_DIR}" "${DIST_DIR}"
 
+if ! python3 - <<'PY'
+import tkinter
+PY
+then
+  echo "Missing Tkinter runtime for the system Python used to package this app." >&2
+  echo "Install it and retry:" >&2
+  echo "  sudo apt update && sudo apt install -y python3-tk tk-dev" >&2
+  exit 1
+fi
+
 if [[ ! -x "${VENV_DIR}/bin/python" && ! -x "${VENV_DIR}/bin/python3" ]]; then
   rm -rf "${VENV_DIR}"
   if python3 -m venv "${VENV_DIR}" 2>/dev/null; then

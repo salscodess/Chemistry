@@ -18,6 +18,13 @@ fi
 
 cd "${FRONTEND_DIR}"
 
+if ! "${PYTHON_BIN}" -c "import tkinter" >/dev/null 2>&1; then
+  echo "Tkinter is required but not installed on this system." >&2
+  echo "Install it, then re-run:" >&2
+  echo "  sudo apt update && sudo apt install -y python3-tk" >&2
+  exit 1
+fi
+
 if [[ ! -x "${VENV_DIR}/bin/python" ]]; then
   "${PYTHON_BIN}" -m venv "${VENV_DIR}"
   "${VENV_DIR}/bin/pip" install -r requirements.txt
