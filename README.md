@@ -177,6 +177,7 @@ Chemistry/
 - [x] Response display with JSON formatting
 - [x] Windows launcher and PyInstaller build support
 - [x] Linux launcher script and desktop entry installer
+- [x] Always-on-top mode with compact mini-bar and animated status UI
 
 ### Backend Enhancements
 - [ ] User authentication with password protection
@@ -221,6 +222,20 @@ Return Response to GUI
 - **Deployment**: Linux, Systemd
 
 ## Development
+
+### Backend Shortcuts
+
+For faster local backend setup and startup:
+
+```bash
+cd backend
+./build.sh   # create venv + install API and dashboard requirements
+./start.sh   # launch API on :8000 and dashboard on :8001
+```
+
+Logs are written to:
+- `/tmp/chemistry-api.log`
+- `/tmp/chemistry-dashboard.log`
 
 ### Adding New Routes
 

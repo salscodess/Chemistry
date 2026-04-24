@@ -8,6 +8,9 @@ This directory now contains the desktop client for Chemistry.
 - Route selection (`cloud`, `hybrid`, `local`)
 - ALT+0 shortcut to send routed request
 - JSON request data editor and formatted response output
+- Modern dark UI with animated status indicators
+- Always-on-top mode (enabled by default)
+- Compact mini-bar mode with live API/request data
 - Linux launcher and `.desktop` integration scripts
 - Build scripts for Windows and Linux binaries via PyInstaller
 
@@ -24,6 +27,12 @@ python desktop_client.py
 ```
 
 Default API URL is `http://localhost:8000`.
+
+## UX Controls
+
+- **ALT+0**: send routed request immediately
+- **Ctrl+-**: collapse/expand into compact mini-bar
+- **Always on top**: toggle in the top-right control area
 
 ## Linux Native Launcher
 
